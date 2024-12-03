@@ -36,7 +36,7 @@ az aks create \
 # This command will is a substitute for "--enable-addons monitoring" option in the "az aks create"
 # Use the log analytics workspace - Resource ID
 # For Cloud Lab users, go to the existing Log Analytics workspace --> Properties --> Resource ID. Copy it and use in the command below.
-az aks enable-addons -a monitoring -n $clusterName -g $resourceGroup --workspace-resource-id "/subscriptions/6c39f60b-2bb1-4e37-ad64-faaf30beaca4/resourcegroups/cloud-demo-153430/providers/microsoft.operationalinsights/workspaces/loganalytics-153430"
+az aks enable-addons -a monitoring -n $clusterName -g $resourceGroup --workspace-resource-id "/subscriptions/9c1597b0-2032-4a42-bc73-ebe5c602b9cb/resourceGroups/cloud-demo/providers/Microsoft.OperationalInsights/workspaces/loganalytics-270275"
 
 echo "AKS cluster created: $clusterName"
 
@@ -54,5 +54,5 @@ echo "Verifying connection to $clusterName"
 kubectl get nodes
 
 # echo "Deploying to AKS cluster"
-# The command below will deploy a standard application to your AKS cluster. 
+# The command below will deploy a standard application to your AKS cluster.
 # kubectl apply -f azure-vote.yaml
