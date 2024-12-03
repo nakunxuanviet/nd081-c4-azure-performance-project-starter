@@ -17,9 +17,9 @@ from opencensus.trace.tracer import Tracer
 from opencensus.ext.flask.flask_middleware import FlaskMiddleware
 
 
-instrumentationKey = '860601c4-8f9b-4845-8214-01886c5e865b'
+instrumentationKey = '06a554c3-bcd1-44d7-b684-c0582a1b2e4f'
 
-app_insights_conn_string = 'InstrumentationKey=860601c4-8f9b-4845-8214-01886c5e865b;IngestionEndpoint=https://westus-0.in.applicationinsights.azure.com/;LiveEndpoint=https://westus.livediagnostics.monitor.azure.com/;ApplicationId=cb1c9ea9-d055-4d0c-9afb-95a3cd68fb1c'
+app_insights_conn_string = 'InstrumentationKey=06a554c3-bcd1-44d7-b684-c0582a1b2e4f;IngestionEndpoint=https://eastus-8.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/;ApplicationId=c1fbd017-cc76-4a4d-b25a-d59b658e6446'
 
 # Logging
 # TODO: Setup logger
@@ -142,6 +142,6 @@ def index():
 
 if __name__ == "__main__":
     # TODO: Use the statement below when running locally
-    # app.run() 
+    # app.run()
     # TODO: Use the statement below before deployment to VMSS
     app.run(host='0.0.0.0', threaded=True, debug=True) # remote
